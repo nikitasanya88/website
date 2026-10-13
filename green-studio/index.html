@@ -832,7 +832,8 @@
         <button type="button" class="tab-btn" data-tab="visage">Візаж/брови</button>
         <button type="button" class="tab-btn" data-tab="cosmo">Косметологія</button>
         <button type="button" class="tab-btn" data-tab="nails">Нігті</button>
-        <button type="button" class="tab-btn" data-tab="treat">Лікування волосся</button>
+        <button type="button" class="tab-btn" data-tab="treat">Лікування та нарощування</button>
+        <button type="button" class="tab-btn" data-tab="extra">Додатково</button>
       </div>
 
       <div class="services-grid reveal-group" id="servicesGrid" role="group" aria-label="Каталог послуг" tabindex="0">
@@ -1132,24 +1133,23 @@
 
         <div class="service-card show" data-cat="visage">
           <div class="sc-media">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Візаж — Green Studio">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Корекція та фарбування брів — Green Studio">
               <defs><linearGradient id="svcg11" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#7A7D56"/><stop offset="100%" stop-color="#23251A"/>
               </linearGradient></defs>
               <rect width="400" height="300" fill="url(#svcg11)"/>
               <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
-                            <circle cx="200" cy="150" r="72" fill="none" stroke="#F2F3F4" stroke-width="5"/>
-    <circle cx="200" cy="150" r="34" fill="none" stroke="#F2F3F4" stroke-width="5"/>
-    <circle cx="200" cy="150" r="14" fill="#C9CD9A"/>
-    <path d="M200 78v-18M200 240v18M128 150h-18M272 150h18" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M96 158c28-40 70-56 106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M304 158c-28-40-70-56-106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M132 208c22 18 46 26 68 26s46-8 68-26" fill="none" stroke="#C9CD9A" stroke-width="5" stroke-linecap="round"/>
             </svg>
             <span class="sc-tag">Візаж/брови</span>
           </div>
           <div class="sc-body">
-            <h3>Візаж</h3>
-            <p>Макіяж під подію та ваш образ — денний, вечірній, святковий.</p>
+            <h3>Корекція та фарбування брів</h3>
+            <p>Моделювання + корекція воском або пінцетом 300 ₴, комплекс (корекція + фарбування) 500 ₴.</p>
             <div class="sc-foot">
-              <div class="sc-price"><em>вартість</em><strong>за запитом</strong></div>
+              <div class="sc-price"><em>від</em><strong>300 ₴</strong></div>
               <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
@@ -1159,7 +1159,7 @@
 
         <div class="service-card show" data-cat="visage">
           <div class="sc-media">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Оформлення брів — Green Studio">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ламінування брів — Green Studio">
               <defs><linearGradient id="svcg12" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#7A7D56"/><stop offset="100%" stop-color="#23251A"/>
               </linearGradient></defs>
@@ -1172,10 +1172,10 @@
             <span class="sc-tag">Візаж/брови</span>
           </div>
           <div class="sc-body">
-            <h3>Оформлення брів</h3>
-            <p>Корекція та форма брів під риси обличчя.</p>
+            <h3>Ламінування брів</h3>
+            <p>Ламінування брів без фарбування 500 ₴, ламінування та фарбування 700 ₴.</p>
             <div class="sc-foot">
-              <div class="sc-price"><em>вартість</em><strong>за запитом</strong></div>
+              <div class="sc-price"><em>від</em><strong>500 ₴</strong></div>
               <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
@@ -1185,23 +1185,80 @@
 
         <div class="service-card show" data-cat="visage">
           <div class="sc-media">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Догляд за бровами — Green Studio">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вії: ламінування та фарбування — Green Studio">
               <defs><linearGradient id="svcg13" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#7A7D56"/><stop offset="100%" stop-color="#23251A"/>
               </linearGradient></defs>
               <rect width="400" height="300" fill="url(#svcg13)"/>
               <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
-                            <path d="M96 158c28-40 70-56 106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
-    <path d="M304 158c-28-40-70-56-106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
-    <path d="M132 208c22 18 46 26 68 26s46-8 68-26" fill="none" stroke="#C9CD9A" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M108 168c28-36 60-54 92-54s64 18 92 54" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M108 168c28 30 60 44 92 44s64-14 92-44" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="200" cy="168" r="20" fill="#C9CD9A"/>
+    <g stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M128 130l-18-20M168 112l-10-24M212 110l6-24M256 120l16-22M292 144l22-14"/></g>
             </svg>
             <span class="sc-tag">Візаж/брови</span>
           </div>
           <div class="sc-body">
-            <h3>Догляд за бровами</h3>
-            <p>Процедури для об’єму, форми та доглянутого вигляду брів.</p>
+            <h3>Вії: ламінування та фарбування</h3>
+            <p>Фарбування вій 300 ₴, ламінування та фарбування вій 700 ₴.</p>
             <div class="sc-foot">
-              <div class="sc-price"><em>вартість</em><strong>за запитом</strong></div>
+              <div class="sc-price"><em>від</em><strong>300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="visage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Депіляція обличчя — Green Studio">
+              <defs><linearGradient id="svcg14" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7A7D56"/><stop offset="100%" stop-color="#23251A"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg14)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M108 168c28-36 60-54 92-54s64 18 92 54" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M108 168c28 30 60 44 92 44s64-14 92-44" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="200" cy="168" r="20" fill="#C9CD9A"/>
+    <g stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M128 130l-18-20M168 112l-10-24M212 110l6-24M256 120l16-22M292 144l22-14"/></g>
+            </svg>
+            <span class="sc-tag">Візаж/брови</span>
+          </div>
+          <div class="sc-body">
+            <h3>Депіляція обличчя</h3>
+            <p>Видалення небажаного волосся на обличчі.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>150 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="visage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Макіяж — Green Studio">
+              <defs><linearGradient id="svcg15" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7A7D56"/><stop offset="100%" stop-color="#23251A"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg15)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <circle cx="200" cy="150" r="72" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <circle cx="200" cy="150" r="34" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <circle cx="200" cy="150" r="14" fill="#C9CD9A"/>
+    <path d="M200 78v-18M200 240v18M128 150h-18M272 150h18" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Візаж/брови</span>
+          </div>
+          <div class="sc-body">
+            <h3>Макіяж</h3>
+            <p>Експрес (20–30 хв) 700 ₴, денний 800 ₴, вечірній з віями 1 000 ₴, весільний від 1 200 ₴, графічний 1 200 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>700 ₴</strong></div>
               <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
@@ -1212,10 +1269,10 @@
         <div class="service-card show" data-cat="cosmo">
           <div class="sc-media">
             <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Косметологія — Green Studio">
-              <defs><linearGradient id="svcg14" x1="0" y1="0" x2="1" y2="1">
+              <defs><linearGradient id="svcg16" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#656A44"/><stop offset="100%" stop-color="#1A1D11"/>
               </linearGradient></defs>
-              <rect width="400" height="300" fill="url(#svcg14)"/>
+              <rect width="400" height="300" fill="url(#svcg16)"/>
               <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
                             <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
     <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
@@ -1224,7 +1281,7 @@
           </div>
           <div class="sc-body">
             <h3>Косметологія</h3>
-            <p>Процедури для здоров’я та сяйва шкіри — програму підбираємо після консультації.</p>
+            <p>Процедури для здоров’я та сяйва шкіри — вартість і програму підбираємо після консультації.</p>
             <div class="sc-foot">
               <div class="sc-price"><em>вартість</em><strong>за запитом</strong></div>
               <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
@@ -1236,11 +1293,11 @@
 
         <div class="service-card show" data-cat="nails">
           <div class="sc-media">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Нігтьовий сервіс — Green Studio">
-              <defs><linearGradient id="svcg15" x1="0" y1="0" x2="1" y2="1">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Манікюр — Green Studio">
+              <defs><linearGradient id="svcg17" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#74774F"/><stop offset="100%" stop-color="#202316"/>
               </linearGradient></defs>
-              <rect width="400" height="300" fill="url(#svcg15)"/>
+              <rect width="400" height="300" fill="url(#svcg17)"/>
               <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
                             <rect x="162" y="128" width="76" height="110" rx="16" fill="none" stroke="#F2F3F4" stroke-width="5"/>
     <rect x="178" y="86" width="44" height="40" rx="8" fill="#C9CD9A"/>
@@ -1250,10 +1307,64 @@
             <span class="sc-tag">Нігті</span>
           </div>
           <div class="sc-body">
-            <h3>Нігтьовий сервіс</h3>
-            <p>Догляд за нігтями рук і ніг, покриття та дизайн — під ваш настрій і стиль.</p>
+            <h3>Манікюр</h3>
+            <p>Класичний, апаратний або комбінований 400 ₴, зі зняттям старого матеріалу 500 ₴, з гель-лаком 800 ₴, з покриттям гелем 850–900 ₴, зняття матеріалу 250 ₴.</p>
             <div class="sc-foot">
-              <div class="sc-price"><em>вартість</em><strong>за запитом</strong></div>
+              <div class="sc-price"><em>від</em><strong>250 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="nails">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Нарощування та дизайн нігтів — Green Studio">
+              <defs><linearGradient id="svcg18" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#74774F"/><stop offset="100%" stop-color="#202316"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg18)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M170 100a30 30 0 0 1 60 0v92a30 30 0 0 1-60 0z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M170 150h60" stroke="#C9CD9A" stroke-width="5" stroke-linecap="round"/>
+    <g stroke="#F2F3F4" stroke-width="4" stroke-linecap="round"><path d="M262 116h30M262 150h30M262 184h30"/></g>
+    <path d="M108 150h34" stroke="#C9CD9A" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Нігті</span>
+          </div>
+          <div class="sc-body">
+            <h3>Нарощування та дизайн нігтів</h3>
+            <p>Нарощування від 1 000 ₴. Френч гель-лаком, ремонт, дизайн або нарощення 1 нігтя — 70–100 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>70 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="nails">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Педикюр та догляд за ногами — Green Studio">
+              <defs><linearGradient id="svcg19" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#74774F"/><stop offset="100%" stop-color="#202316"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg19)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round">
+      <path d="M132 236c0-56 16-84 16-114a20 20 0 0 1 40 0c0 26 8 36 8 36"/>
+      <path d="M196 236c0-46 10-66 10-94a20 20 0 0 1 40 0c0 20 8 28 8 28"/></g>
+    <circle cx="272" cy="112" r="12" fill="#C9CD9A"/>
+            </svg>
+            <span class="sc-tag">Нігті</span>
+          </div>
+          <div class="sc-body">
+            <h3>Педикюр та догляд за ногами</h3>
+            <p>Педикюр (кислотний, апаратний, комбінований) 800 ₴, з гель-лаком 900 ₴, чоловічий 900 ₴, чистка пальчиків 550 ₴, чистка стоп 400 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>400 ₴</strong></div>
               <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
@@ -1263,11 +1374,186 @@
 
         <div class="service-card show" data-cat="treat">
           <div class="sc-media">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Лікування волосся — Green Studio">
-              <defs><linearGradient id="svcg16" x1="0" y1="0" x2="1" y2="1">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Пілінг волосся — Green Studio">
+              <defs><linearGradient id="svcg20" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
               </linearGradient></defs>
-              <rect width="400" height="300" fill="url(#svcg16)"/>
+              <rect width="400" height="300" fill="url(#svcg20)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Пілінг волосся</h3>
+            <p>Очищення та оновлення шкіри голови і волосся: 600–900 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Відновлення і живлення Yellow — Green Studio">
+              <defs><linearGradient id="svcg21" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg21)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Відновлення і живлення Yellow</h3>
+            <p>Професійне відновлення та живлення волосся від Yellow: 1 100–1 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 100 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mango Spa — Green Studio">
+              <defs><linearGradient id="svcg22" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg22)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Mango Spa</h3>
+            <p>SPA-догляд для волосся Mango Spa: 1 100–1 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 100 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ритуал від Davines — Green Studio">
+              <defs><linearGradient id="svcg23" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg23)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ритуал від Davines</h3>
+            <p>Догляд-ритуал для волосся від Davines: 1 400–2 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 400 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Холодний ботокс — Green Studio">
+              <defs><linearGradient id="svcg24" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg24)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Холодний ботокс</h3>
+            <p>Холодний ботокс для гладкості та блиску волосся: 1 600–2 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ламінування волосся — Green Studio">
+              <defs><linearGradient id="svcg25" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg25)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ламінування волосся</h3>
+            <p>Ламінування волосся для блиску та гладкості: 1 200–1 700 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 200 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Відновлення Lanza Ultimate — Green Studio">
+              <defs><linearGradient id="svcg26" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg26)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#C9CD9A" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Відновлення Lanza Ultimate</h3>
+            <p>Інтенсивне відновлення Lanza Ultimate: 1 300–2 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кератинове вирівнювання — Green Studio">
+              <defs><linearGradient id="svcg27" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg27)"/>
               <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
                             <g stroke="#F2F3F4" stroke-width="4.5" fill="none" stroke-linecap="round">
       <path d="M112 62c0 78 18 116 42 176"/><path d="M158 62c0 82 10 122 26 176"/>
@@ -1275,13 +1561,13 @@
       <path d="M296 62c0 78-18 116-42 176"/></g>
     <path d="M100 74h204" stroke="#C9CD9A" stroke-width="7" stroke-linecap="round"/>
             </svg>
-            <span class="sc-tag">Лікування волосся</span>
+            <span class="sc-tag">Лікування та нарощування</span>
           </div>
           <div class="sc-body">
-            <h3>Лікування волосся</h3>
-            <p>Відновлення та лікування волосся — підбираємо програму під стан волосся та шкіри голови.</p>
+            <h3>Кератинове вирівнювання</h3>
+            <p>Залежно від довжини: 1 — 2 000–2 300 ₴, 2 — 2 500–2 900 ₴, 3 — 3 000–3 300 ₴, 4 — 3 400–3 700 ₴.</p>
             <div class="sc-foot">
-              <div class="sc-price"><em>вартість</em><strong>за запитом</strong></div>
+              <div class="sc-price"><em>від</em><strong>2 000 ₴</strong></div>
               <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
@@ -1291,26 +1577,81 @@
 
         <div class="service-card show" data-cat="treat">
           <div class="sc-media">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Нарощування волосся — Green Studio">
-              <defs><linearGradient id="svcg17" x1="0" y1="0" x2="1" y2="1">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Нарощування волосся преміум — Green Studio">
+              <defs><linearGradient id="svcg28" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
               </linearGradient></defs>
-              <rect width="400" height="300" fill="url(#svcg17)"/>
+              <rect width="400" height="300" fill="url(#svcg28)"/>
               <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
-                            <g fill="none" stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
-      <path d="M96 118c34-26 70-26 104 0s70 26 104 0"/>
-      <path d="M96 158c34-26 70-26 104 0s70 26 104 0"/>
-      <path d="M96 198c34-26 70-26 104 0s70 26 104 0"/></g>
-    <g stroke="#C9CD9A" stroke-width="4" stroke-linecap="round">
-      <path d="M298 76v22M287 87h22"/><path d="M118 226v16M110 234h16"/></g>
+                            <g stroke="#F2F3F4" stroke-width="4.5" fill="none" stroke-linecap="round">
+      <path d="M112 62c0 78 18 116 42 176"/><path d="M158 62c0 82 10 122 26 176"/>
+      <path d="M204 62c0 84 2 126 2 176"/><path d="M250 62c0 82-10 122-24 176"/>
+      <path d="M296 62c0 78-18 116-42 176"/></g>
+    <path d="M100 74h204" stroke="#C9CD9A" stroke-width="7" stroke-linecap="round"/>
             </svg>
-            <span class="sc-tag">Лікування волосся</span>
+            <span class="sc-tag">Лікування та нарощування</span>
           </div>
           <div class="sc-body">
-            <h3>Нарощування волосся</h3>
-            <p>Нарощування для довжини та об’єму — консультація перед процедурою.</p>
+            <h3>Нарощування волосся преміум</h3>
+            <p>Блонд / чорні: 50 см — 200 $, 60 см — 220 / 210 $, 70 см — 230 / 220 $, 80 см — 245 / 235 $. Робота 5 000 ₴ за 100 г волосся.</p>
             <div class="sc-foot">
-              <div class="sc-price"><em>вартість</em><strong>за запитом</strong></div>
+              <div class="sc-price"><em>від</em><strong>200 $</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Слов’янка дитяча — Green Studio">
+              <defs><linearGradient id="svcg29" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5F6440"/><stop offset="100%" stop-color="#181B0F"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg29)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="4.5" fill="none" stroke-linecap="round">
+      <path d="M112 62c0 78 18 116 42 176"/><path d="M158 62c0 82 10 122 26 176"/>
+      <path d="M204 62c0 84 2 126 2 176"/><path d="M250 62c0 82-10 122-24 176"/>
+      <path d="M296 62c0 78-18 116-42 176"/></g>
+    <path d="M100 74h204" stroke="#C9CD9A" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Слов’янка дитяча</h3>
+            <p>50–60 см — 360 $, 65–75 см — 380 $, 80–90 см — 420 $. Хвиля +10 $, омбре +10 $.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>360 $</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="extra">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ранній вихід майстра — Green Studio">
+              <defs><linearGradient id="svcg30" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E49"/><stop offset="100%" stop-color="#1C1F12"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg30)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M108 168c28-36 60-54 92-54s64 18 92 54" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M108 168c28 30 60 44 92 44s64-14 92-44" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="200" cy="168" r="20" fill="#C9CD9A"/>
+    <g stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M128 130l-18-20M168 112l-10-24M212 110l6-24M256 120l16-22M292 144l22-14"/></g>
+            </svg>
+            <span class="sc-tag">Додатково</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ранній вихід майстра</h3>
+            <p>З 5:00 до 6:00 — 500 ₴, 6:00–7:00 — 400 ₴, 7:00–8:00 — 300 ₴, 8:00–9:00 — 200 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>доплата</em><strong>200–500 ₴</strong></div>
               <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
@@ -1322,7 +1663,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
         Гортайте, щоб побачити всі послуги
       </div>
-      <p class="sc-note">Ціни за прайс-листом Green Studio в Instagram; остаточна вартість залежить від довжини й густоти волосся. Для послуг із позначкою «за запитом» вартість уточнюйте за телефоном 095 022 32 00 або в Direct.</p>
+      <p class="sc-note">Ціни за прайс-листом Green Studio в Instagram; остаточна вартість залежить від довжини й густоти волосся. Вартість косметологічних процедур уточнюйте за телефоном 095 022 32 00 або в Direct.</p>
     </div>
   </section>
 
