@@ -22,6 +22,7 @@
 <meta name="twitter:title" content="Green Studio — салон краси в Чернівцях">
 <meta name="twitter:description" content="Візаж і брови, косметологія, нігті, перукарські послуги та волосся — усе для краси в одному просторі Green Studio.">
 <meta name="twitter:image" content="og-image.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%237B7F57' stroke='%23E1306C' stroke-width='4'/%3E%3Ctext x='32' y='41' font-size='26' font-family='Georgia,serif' text-anchor='middle' fill='%2315170F'%3EG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,420;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -44,6 +45,7 @@
     --gold:#8E9178;
     --gold-soft:#C5C8B0;
     --cream-text:#FAFAF7;
+    --on-accent:#FFFFFF;
     --shadow-sm: 0 2px 10px rgba(27,29,22,0.07);
     --shadow-md: 0 18px 40px -14px rgba(26,27,29,0.24);
     --shadow-lg: 0 34px 70px -20px rgba(26,27,29,0.32);
@@ -68,7 +70,7 @@
       --wine:#D5D8C4; --wine-deep:#EDEFE0; --wine-tint:#1F2420;
       --accent:#A7AC74; --accent-soft:#2C2F1F;
       --gold:#AEB191; --gold-soft:#D3D6BC;
-      --cream-text:#0D1014;
+      --cream-text:#0D1014; --on-accent:#0D1014;
       --shadow-sm: 0 2px 10px rgba(0,0,0,0.28);
       --shadow-md: 0 18px 40px -14px rgba(0,0,0,0.5);
       --shadow-lg: 0 34px 70px -20px rgba(0,0,0,0.55);
@@ -81,7 +83,7 @@
     --wine:#D5D8C4; --wine-deep:#EDEFE0; --wine-tint:#1F2420;
     --accent:#A7AC74; --accent-soft:#2C2F1F;
     --gold:#AEB191; --gold-soft:#D3D6BC;
-    --cream-text:#0D1014;
+    --cream-text:#0D1014; --on-accent:#0D1014;
     --shadow-sm: 0 2px 10px rgba(0,0,0,0.28);
     --shadow-md: 0 18px 40px -14px rgba(0,0,0,0.5);
     --shadow-lg: 0 34px 70px -20px rgba(0,0,0,0.55);
@@ -254,7 +256,7 @@
     transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), border-color .3s var(--ease-soft), color .3s var(--ease-soft);
   }
   .quick-link svg{width:18px; height:18px;}
-  .quick-link:hover{border-color:var(--accent); background:var(--accent); color:#fff; transform:translateY(-3px) scale(1.05);}
+  .quick-link:hover{border-color:var(--accent); background:var(--accent); color:var(--on-accent); transform:translateY(-3px) scale(1.05);}
 
   /* Hero visual: bold, minimalist product composition — no stock imagery */
   .hero-visual{position:relative; height:clamp(380px,44vw,540px);}
@@ -320,6 +322,7 @@
   .reveal-group.in > *{opacity:1; transform:none;}
 
   /* ============ ADVANTAGES ============ */
+  .advantages-wrap section{padding:clamp(40px,6vw,64px) 0;}
   .advantages-wrap{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .adv-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-2);}
   @media(min-width:640px){ .adv-grid{grid-template-columns:repeat(2,1fr);} }
@@ -333,7 +336,7 @@
     display:flex; align-items:center; justify-content:center; margin-bottom:22px;
     transition:transform .45s var(--ease-spring), background .35s var(--ease-soft), color .35s var(--ease-soft);
   }
-  .adv-item:hover .adv-icon{background:var(--accent); color:#fff; transform:rotate(-8deg) scale(1.08);}
+  .adv-item:hover .adv-icon{background:var(--accent); color:var(--on-accent); transform:rotate(-8deg) scale(1.08);}
   .adv-icon svg{width:19px; height:19px;}
   .adv-item h3{font-size:1.18rem; font-weight:500; margin-bottom:11px;}
   .adv-item p{color:var(--ink-soft); font-size:0.96rem; line-height:1.55;}
@@ -395,7 +398,7 @@
     transition:background .3s var(--ease-soft), color .3s var(--ease-soft);
   }
   .sc-btn svg{width:13px; height:13px; transition:transform .3s var(--ease-spring);}
-  .sc-btn:hover{background:var(--accent); color:#fff;}
+  .sc-btn:hover{background:var(--accent); color:var(--on-accent);}
   .sc-btn:hover svg{transform:translateX(3px);}
 
   /* mobile: swipeable, snap-scrolling row — one card settles per swipe */
@@ -410,7 +413,10 @@
     .services-grid::-webkit-scrollbar{display:none;}
     .services-grid:focus{outline:none;}
     .services-grid:focus-visible{outline:var(--focus); outline-offset:6px;}
-    .service-card{flex:0 0 80%; scroll-snap-align:start; scroll-snap-stop:always;}
+    .services-grid{scroll-padding-left:clamp(20px,4vw,40px);}
+    .service-card{flex:0 0 82%; scroll-snap-align:start; scroll-snap-stop:always;}
+    .sc-media{aspect-ratio:3/2;}
+    .sc-body{padding:22px 22px 24px;}
     .service-card:hover{transform:none;}
     .sc-hint{display:flex;}
   }
@@ -439,7 +445,7 @@
     font-family:'Fraunces', serif; font-optical-sizing:auto; font-style:italic; font-size:1.32rem; color:var(--wine);
     transition:background .4s var(--ease-soft), border-color .4s var(--ease-soft), color .4s var(--ease-soft), transform .4s var(--ease-spring);
   }
-  .step:hover .step-index{background:var(--accent); border-color:var(--accent); color:#fff; transform:scale(1.08);}
+  .step:hover .step-index{background:var(--accent); border-color:var(--accent); color:var(--on-accent); transform:scale(1.08);}
   /* text column shifts on its own via transform (no layout reflow) so the circle
      never drifts off the timeline's ::before line, which is positioned against .steps */
   .step > div:last-child{padding-top:6px; transition:transform .4s var(--ease-soft);}
@@ -465,7 +471,7 @@
     font-family:'Fraunces', serif; font-optical-sizing:auto; font-style:italic; font-weight:600; font-size:1.22rem;
     transition:background .35s var(--ease-soft), color .35s var(--ease-soft);
   }
-  .team-card:hover .team-avatar{background:var(--accent); color:#fff;}
+  .team-card:hover .team-avatar{background:var(--accent); color:var(--on-accent);}
   .team-info{min-width:0;}
   .team-name{font-family:'Fraunces', serif; font-optical-sizing:auto; font-size:1.1rem; font-weight:500; margin-bottom:4px;}
   .team-role{color:var(--ink-soft); font-size:0.87rem; line-height:1.45; margin-bottom:8px;}
@@ -546,6 +552,7 @@
       padding:4px clamp(20px,4vw,40px) 10px;
     }
     .testi-grid::-webkit-scrollbar{display:none;}
+    .testi-grid{scroll-padding-left:clamp(20px,4vw,40px);}
     .testi-card{flex:0 0 84%; scroll-snap-align:start;}
     .testi-card:hover{transform:none;}
   }
@@ -569,7 +576,7 @@
   .faq-plus::before{width:11px; height:1.4px;}
   .faq-plus::after{width:1.4px; height:11px; transition:opacity .3s ease;}
   .faq-item.open .faq-plus{transform:rotate(135deg); border-color:var(--accent); background:var(--accent);}
-  .faq-item.open .faq-plus::before, .faq-item.open .faq-plus::after{background:#fff;}
+  .faq-item.open .faq-plus::before, .faq-item.open .faq-plus::after{background:var(--on-accent);}
   .faq-a{max-height:0; overflow:hidden; transition:max-height .5s var(--ease);}
   .faq-a p{padding:0 18px 28px 22px; color:var(--ink-soft); font-size:0.98rem; line-height:1.62; max-width:64ch;}
 
@@ -583,7 +590,7 @@
     display:flex; align-items:center; justify-content:center; flex-shrink:0;
     transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), color .3s var(--ease-soft);
   }
-  .contact-row:hover .ci{background:var(--accent); color:#fff; transform:scale(1.08);}
+  .contact-row:hover .ci{background:var(--accent); color:var(--on-accent); transform:scale(1.08);}
   .contact-row .ci svg{width:17px; height:17px;}
   .contact-row .cl-label{font-size:0.78rem; color:var(--ink-faint); margin-bottom:4px; text-transform:uppercase; letter-spacing:0.04em;}
   .contact-row .cl-value{font-size:1.04rem; font-weight:700; display:inline-block; text-decoration:none; color:inherit; transition:color .25s var(--ease-soft);}
@@ -594,7 +601,7 @@
     width:46px; height:46px; border-radius:50%; border:1px solid var(--line-strong);
     display:flex; align-items:center; justify-content:center; transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), border-color .3s var(--ease-soft), color .3s var(--ease-soft);
   }
-  .soc:hover{border-color:var(--accent); background:var(--accent); color:#fff; transform:translateY(-4px) scale(1.05);}
+  .soc:hover{border-color:var(--accent); background:var(--accent); color:var(--on-accent); transform:translateY(-4px) scale(1.05);}
   .soc svg{width:17px; height:17px;}
 
   .map-card{
@@ -618,7 +625,7 @@
     transition:background .3s var(--ease-soft), color .3s var(--ease-soft), transform .3s var(--ease-spring);
   }
   .map-open svg{width:14px; height:14px;}
-  .map-card:hover .map-open{background:var(--accent); color:#fff; border-color:var(--accent); transform:translateX(-50%) translateY(-2px);}
+  .map-card:hover .map-open{background:var(--accent); color:var(--on-accent); border-color:var(--accent); transform:translateX(-50%) translateY(-2px);}
   .map-pin{display:flex; position:absolute; top:50%; left:50%; transform:translate(-50%,-100%); display:flex; flex-direction:column; align-items:center;}
   .map-pin .dot{display:block; width:16px; height:16px; border-radius:50%; background:var(--accent); border:4px solid var(--bg); box-shadow:0 6px 14px rgba(0,0,0,0.22);}
   .map-pin .pulse{display:block; position:absolute; top:0; left:50%; width:16px; height:16px; border-radius:50%; background:var(--accent); transform:translateX(-50%); animation:pulse 2.6s var(--ease-soft) infinite;}
@@ -720,7 +727,7 @@
     </button>
     <div class="nav-links">
       <button type="button" data-scroll-to="#services">Послуги</button>
-      <button type="button" data-scroll-to="#team">Команда</button>
+      <button type="button" data-scroll-to="#team">Напрямки</button>
       <button type="button" data-scroll-to="#process">Як це працює</button>
       <button type="button" data-scroll-to="#reviews">Відгуки</button>
       <button type="button" data-scroll-to="#faq">Питання</button>
@@ -746,7 +753,7 @@
     </button>
   </div>
   <button type="button" data-scroll-to="#services" onclick="toggleMenu(false)">Послуги</button>
-  <button type="button" data-scroll-to="#team" onclick="toggleMenu(false)">Команда</button>
+  <button type="button" data-scroll-to="#team" onclick="toggleMenu(false)">Напрямки</button>
   <button type="button" data-scroll-to="#process" onclick="toggleMenu(false)">Як це працює</button>
   <button type="button" data-scroll-to="#reviews" onclick="toggleMenu(false)">Відгуки</button>
   <button type="button" data-scroll-to="#faq" onclick="toggleMenu(false)">Питання</button>
@@ -827,8 +834,8 @@
       </div>
 
       <div class="service-tabs" id="tabs">
-        <button type="button" class="tab-btn active" data-tab="all">Усі</button>
-        <button type="button" class="tab-btn" data-tab="hair">Перукарські</button>
+        <button type="button" class="tab-btn" data-tab="all">Усі</button>
+        <button type="button" class="tab-btn active" data-tab="hair">Перукарські</button>
         <button type="button" class="tab-btn" data-tab="visage">Візаж/брови</button>
         <button type="button" class="tab-btn" data-tab="cosmo">Косметологія</button>
         <button type="button" class="tab-btn" data-tab="nails">Нігті</button>
@@ -1994,7 +2001,7 @@
   <section id="team">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="kicker">Команда</span>
+        <span class="kicker">Напрямки</span>
         <h2>Напрямки, які подбають про ваш образ</h2>
         <p>Кожен напрямок у Green Studio веде окремий спеціаліст — від візажу до лікування волосся. Знайомтеся з роботами в нашому Instagram.</p>
       </div>
@@ -2144,20 +2151,20 @@
       </div>
       <div class="faq-list" id="faqList">
         <div class="faq-item">
-          <button type="button" class="faq-q" aria-expanded="false">Як записатися на процедуру?<span class="faq-plus"></span></button>
-          <div class="faq-a"><p>Натисніть кнопку «Записатися» на сайті, напишіть у Direct в Instagram або зателефонуйте — вкажіть бажану послугу, і ми запропонуємо найближчий вільний час.</p></div>
+          <button type="button" class="faq-q" id="faqq0" aria-controls="faqa0" aria-expanded="false">Як записатися на процедуру?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa0" role="region" aria-labelledby="faqq0"><p>Натисніть кнопку «Записатися» на сайті, напишіть у Direct в Instagram або зателефонуйте — вкажіть бажану послугу, і ми запропонуємо найближчий вільний час.</p></div>
         </div>
         <div class="faq-item">
-          <button type="button" class="faq-q" aria-expanded="false">Чи можна перенести або скасувати запис?<span class="faq-plus"></span></button>
-          <div class="faq-a"><p>Так, попередьте нас заздалегідь у месенджері — підберемо інший зручний час без додаткових питань.</p></div>
+          <button type="button" class="faq-q" id="faqq1" aria-controls="faqa1" aria-expanded="false">Чи можна перенести або скасувати запис?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa1" role="region" aria-labelledby="faqq1"><p>Так, попередьте нас заздалегідь у месенджері — підберемо інший зручний час без додаткових питань.</p></div>
         </div>
         <div class="faq-item">
-          <button type="button" class="faq-q" aria-expanded="false">Скільки триває консультація перед процедурою?<span class="faq-plus"></span></button>
-          <div class="faq-a"><p>Зазвичай 10–15 хвилин: обговорюємо результат, тип волосся або шкіри та підбираємо засоби.</p></div>
+          <button type="button" class="faq-q" id="faqq2" aria-controls="faqa2" aria-expanded="false">Скільки триває консультація перед процедурою?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa2" role="region" aria-labelledby="faqq2"><p>Зазвичай 10–15 хвилин: обговорюємо результат, тип волосся або шкіри та підбираємо засоби.</p></div>
         </div>
         <div class="faq-item">
-          <button type="button" class="faq-q" aria-expanded="false">Якими засобами ви користуєтесь?<span class="faq-plus"></span></button>
-          <div class="faq-a"><p>Використовуємо перевірені професійні бренди для волосся, шкіри та нігтів, підібрані під потреби кожної клієнтки.</p></div>
+          <button type="button" class="faq-q" id="faqq3" aria-controls="faqa3" aria-expanded="false">Якими засобами ви користуєтесь?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa3" role="region" aria-labelledby="faqq3"><p>Використовуємо перевірені професійні бренди для волосся, шкіри та нігтів, підібрані під потреби кожної клієнтки.</p></div>
         </div>
       </div>
     </div>
@@ -2325,6 +2332,14 @@
   var tabs = document.querySelectorAll('.tab-btn');
   var cards = document.querySelectorAll('.service-card');
   var grid = document.getElementById('servicesGrid');
+
+  (function () {
+    var a = document.querySelector('.tab-btn.active');
+    var c = a ? a.getAttribute('data-tab') : 'all';
+    cards.forEach(function (card) {
+      card.classList.toggle('show', c === 'all' || card.getAttribute('data-cat') === c);
+    });
+  })();
 
   tabs.forEach(function (tab) {
     tab.setAttribute('aria-pressed', tab.classList.contains('active') ? 'true' : 'false');
